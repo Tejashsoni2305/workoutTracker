@@ -6,6 +6,8 @@ const app = express()    //Express app
 
 const mongoose = require('mongoose')
 
+const cors = require('cors');
+
 app.use(cors({
     origin: 'https://trackyourprogress.netlify.app' 
 }));
