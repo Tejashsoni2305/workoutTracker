@@ -6,6 +6,10 @@ const app = express()    //Express app
 
 const mongoose = require('mongoose')
 
+app.use(cors({
+    origin: 'https://trackyourprogress.netlify.app' 
+}));
+
 const workoutPaths = require('./routes/workout')
 app.use(express.json())
 
